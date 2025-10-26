@@ -7,10 +7,10 @@ import frc.robot.Constants.DriveConstants;
 
 public class DriveSubsystem extends SubsystemBase {
 
-    private final PWMSparkMax frontLeft = new PWMSparkMax(DriveConstants.FRONT_LEFT_ID);
-    private final PWMSparkMax backLeft = new PWMSparkMax(DriveConstants.BACK_LEFT_ID);
-    private final PWMSparkMax frontRight = new PWMSparkMax(DriveConstants.FRONT_RIGHT_ID);
-    private final PWMSparkMax backRight = new PWMSparkMax(DriveConstants.BACK_RIGHT_ID);
+    private final SparkMax frontLeft = new SparkMax(DriveConstants.FRONT_LEFT_ID);
+    private final SparkMax backLeft = new SparkMax(DriveConstants.BACK_LEFT_ID);
+    private final SparkMax frontRight = new SparkMax(DriveConstants.FRONT_RIGHT_ID);
+    private final SparkMax backRight = new SparkMax(DriveConstants.BACK_RIGHT_ID);
 
     private final DifferentialDrive drive;
 
