@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants.IntakeConstants;
 
 public class IntakeSubsystem extends SubsystemBase {
-    private final PWMSparkMax intakeMotor = new PWMSparkMax(IntakeConstants.MOTOR_ID);
+    private final SparkMax intakeMotor = new SparkMax(IntakeConstants.MOTOR_ID);
 
     public void run(double speed) {
         intakeMotor.set(speed);
